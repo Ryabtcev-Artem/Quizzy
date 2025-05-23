@@ -24,7 +24,7 @@ class SendUserAnswers {
 
     async sendToServer(promptText) {
         try {
-            const response = await fetch("https://quizzy-fun.up.railway.app/api/deepseek", {
+            const response = await fetch("/api/deepseek", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
