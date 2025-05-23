@@ -1,0 +1,189 @@
+@use "../helpers" as *;
+
+.slider-item {
+    & *{
+        user-select: none;
+        -webkit-user-drag: none;
+        touch-action: pan-y;
+    }
+    background-color: var(--color-gray-15);
+    min-width: rem(382);
+    max-width: rem(382);
+    min-height: rem(490);
+    max-height: rem(490);
+    border-radius: var(--border-radius);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition-duration: var(--transition-duration);
+    outline: rem(2) solid transparent;
+    @include tablet{
+        min-width: rem(320);
+        max-width: rem(320);
+    }
+    @include mobile-s{
+        min-width: rem(290);
+        max-width: rem(290);
+        min-height: rem(460);
+        max-height: rem(460);
+    }
+
+    &__trophies {
+        position: absolute;
+        right: rem(-10);
+        top: rem(-30);
+        z-index: 10;
+        width: rem(40);
+        height: rem(40);
+        pointer-events: none;
+        &__star,
+        &__crown,
+        &__rocket {
+          position: absolute;
+          width: rem(40);
+          height: rem(40);
+          opacity: 0;
+        }
+      
+        &__star {
+          animation: scalePulse 6s ease-in-out infinite 0s;
+        }
+        &__crown {
+          animation: scalePulse 6s ease-in-out infinite 2s;
+        }
+        &__rocket {
+          animation: scalePulse 6s ease-in-out infinite 4s;
+        }
+      
+        @keyframes scalePulse {
+          0%, 100% {
+            transform: scale(0.8);
+            opacity: 0;
+          }
+          30%{
+            transform: scale(1.2);
+            opacity: 1;
+          }
+          60% {
+            transform: scale(1.2);
+            opacity: 0;
+            transform: scale(0.8);
+          }
+        }
+      }
+    &:hover {
+        box-shadow: 0 12px 32px rgba(78, 156, 255, 0.4),
+            0 4px 16px rgba(78, 156, 255, 0.6);
+
+        outline: rem(2) solid var(--color-accent);
+    }
+
+    &__statistics {
+        display: flex;
+        border-top: var(--border-1);
+        padding-block: rem(10);
+        column-gap: rem(14);
+    }
+    &__rating {
+        display: flex;
+        column-gap: rem(5);
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__extra {
+        width: rem(24);
+        height: rem(24);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__erotic {
+        margin-left: auto;
+        background-image: url("../../images/test/svgs/banana-gray.svg");
+        &.active {
+            background-image: url("../../images/test/svgs/banana-color.svg");
+        }
+    }
+    &__badwords {
+        justify-self: flex-end;
+        background-image: url("../../images/test/svgs/normal.svg");
+        &.active {
+            background-image: url("../../images/test/svgs/insane.svg");
+        }
+    }
+    &__statistics-link {
+        background-color: var(--color-gray-30);
+        padding: rem(6);
+    }
+    &__content {
+        position: relative;
+        padding-top: rem(30);
+        padding-inline: rem(20);
+    }
+
+    &__info {
+        display: grid;
+        row-gap: rem(12);
+        &__title {
+            font-size: fluid(18, 16);
+            font-weight: 600;
+        }
+        &__description {
+            color: var(--color-gray-35);
+        }
+    }
+    &__top {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        top: rem(-16);
+        left: 0;
+        padding-inline: rem(20);
+    }
+    &__profile-link {
+        display: flex;
+        column-gap: rem(8);
+        &__user-avatar {
+            border-radius: 50%;
+            max-width: rem(24);
+            max-height: rem(24);
+        }
+        &__user-name {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__bottom{
+        padding-inline: rem(20);
+        margin-top: auto;
+    }
+    &__img{
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+        aspect-ratio: 5/3;
+        object-position: top;
+        object-fit: cover;
+    }
+    &__link{
+        height: fit-content;
+        width: fit-content;
+    }
+    &__end{
+        display: flex;
+        padding: rem(20);
+        align-items: end;
+        justify-content: center;
+        background-image: url('../../images/background/slider-last-item.svg');
+        background-position: top ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: var(--border-radius);
+        min-width: rem(280);
+        @include tablet {
+            min-width: rem(180);
+        }
+        background-color: var(--color-gray-15);
+    }
+}

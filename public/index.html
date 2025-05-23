@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="icon" href="./images/svgs/crown_logo.svg" />
+        <script src="./scripts/main.js" type="module"></script>
+        <title>Quizzy - интересные тесты</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container" data-js-header-element>
+                <div class="header__menu-wrap">
+                    <nav class="header__menu container">
+                        <div class="header__overlay" data-js-overlay></div>
+                        <a class="header__logo" href="#">
+                            <img
+                                width="60"
+                                height="60"
+                                src="./images/logo/site_logo.png"
+                                loading="lazy"
+                                alt=""
+                            />
+                        </a>
+                        <ul class="header__list" data-js-menu-list>
+                            <li class="header__item is-active">
+                                <a class="header__link" href="./index.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/main.svg"
+                                        alt=""
+                                    />
+                                    <span>ГЛАВНАЯ</span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="./tests.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/rocket.svg"
+                                        alt=""
+                                    />
+                                    <span>ТЕСТЫ</span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="./posts.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/note.svg"
+                                        alt=""
+                                    />
+                                    <span>ПОСТЫ</span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="./top.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/leaderboard.svg"
+                                        alt=""
+                                    />
+                                    <span>ТОПЫ</span>
+                                </a>
+                            </li>
+                            <p class="our-links visible-tablet">Мы везде:</p>
+                            <li class="header__item visible-tablet">
+                                <a class="header__link" href="t.me/ryabtcevv">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/telegram.svg"
+                                        alt=""
+                                    />
+                                    <span>TELEGRAM</span>
+                                </a>
+                            </li>
+                            <li class="header__item visible-tablet">
+                                <a
+                                    class="header__link"
+                                    href="https://github.com/Ryabtcev-Artem"
+                                >
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/github.svg"
+                                        alt=""
+                                    />
+                                    <span>GITHUB</span>
+                                </a>
+                            </li>
+                            <li class="header__item visible-tablet">
+                                <a
+                                    class="header__link"
+                                    href="https://leetcode.com/u/ryabtcev/"
+                                >
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/leetcode.svg"
+                                        alt=""
+                                    />
+                                    <span>LEETCODE</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__righted">
+                            <div
+                                class="header__burger-button burger-button visible-tablet"
+                                data-js-mobile-menu
+                            >
+                                <span class="burger-button__line"></span>
+                                <span class="burger-button__line"></span>
+                                <span class="burger-button__line"></span>
+                            </div>
+                            <a href="#" class="login button button-accent">
+                                <span class="icon-login">ВХОД</span>
+                            </a>
+                            <button class="search">
+                                <img
+                                    width="30"
+                                    height="30"
+                                    src="./images/svgs/search.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="welcome container">
+                <div class="welcome__profile-block profile-block">
+                    <ul class="profile-block__list">
+                        <h2 class="visually-hidden">Statictics</h2>
+                        <li class="profile-block__item">
+                            <img
+                                class="profile-block__item__img"
+                                src="./images/svgs/star.svg"
+                                alt=""
+                            />
+                            <h3 class="user_tests_total">86982</h3>
+                            <p class="profile-block__item__subtitle">
+                                Тестов и квизов
+                            </p>
+                        </li>
+                        <li class="profile-block__item">
+                            <img
+                                class="profile-block__item__img"
+                                src="./images/svgs/post.svg"
+                                alt=""
+                            />
+                            <h3 class="user_tests_total">12089</h3>
+                            <p class="profile-block__item__subtitle">
+                                Постов в блогах
+                            </p>
+                        </li>
+                        <li class="profile-block__item">
+                            <img
+                                class="profile-block__item__img"
+                                src="./images/svgs/people.svg"
+                                alt=""
+                            />
+                            <h3 class="user_tests_total">181804</h3>
+                            <p class="profile-block__item__subtitle">
+                                Членов сообщества
+                            </p>
+                        </li>
+                        <li class="profile-block__item">
+                            <img
+                                class="profile-block__item__img"
+                                src="./images/svgs/peoplenew.svg"
+                                alt=""
+                            />
+                            <h3 class="user_tests_total">47613</h3>
+                            <p class="profile-block__item__subtitle">
+                                Посетителей вчера
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="welcome__news news" data-js-welcome-news>
+                    <a
+                        class="news__card news-card news-card-digest is-active"
+                        data-js-news-card1
+                    >
+                        <div class="news-card__top">
+                            <div class="news-card__marker">
+                                <span>НОВОСТИ САЙТА</span>
+                            </div>
+                            <div class="news-card__info">
+                                <div class="news-card__comments">
+                                    <img
+                                        width="20"
+                                        height="20"
+                                        src="./images/svgs/comments.svg"
+                                        alt=""
+                                    />
+                                    <span>25</span>
+                                </div>
+                                <div class="news-card__date">
+                                    <img
+                                        width="20"
+                                        height="20"
+                                        src="./images/svgs/date.svg"
+                                        alt=""
+                                    />
+                                    <time data-timestamp-date="1743451210"
+                                        >3/31/2025</time
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card__bottom">
+                            <h4 class="news-card__title">
+                                Лучшие из лучших! Мартовский дайджест 2025!
+                            </h4>
+                        </div>
+                    </a>
+                    <a
+                        class="news__card news-card news-card-spoilers"
+                        data-js-news-card2
+                    >
+                        <div class="news-card__top">
+                            <div class="news-card__marker">
+                                <span>НОВОСТИ САЙТА</span>
+                            </div>
+                            <div class="news-card__info">
+                                <div class="news-card__comments">
+                                    <img
+                                        width="20"
+                                        height="20"
+                                        src="./images/svgs/comments.svg"
+                                        alt=""
+                                    />
+                                    <span>53</span>
+                                </div>
+                                <div class="news-card__date">
+                                    <img
+                                        width="20"
+                                        height="20"
+                                        src="./images/svgs/date.svg"
+                                        alt=""
+                                    />
+                                    <time data-timestamp-date="1743451210"
+                                        >4/1/2025</time
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card__bottom">
+                            <h4 class="news-card__title">
+                                Спойлеры к следующему обновлению
+                            </h4>
+                        </div>
+                    </a>
+                    <a
+                        class="news__card news-card news-card-guide"
+                        data-js-news-card3
+                    >
+                        <div class="news-card__top">
+                            <div class="news-card__marker">
+                                <span>ПОЛЕЗНЫЕ МАТЕРИАЛЫ</span>
+                            </div>
+                        </div>
+                        <div class="news-card__bottom">
+                            <h4 class="news-card__title">
+                                "Что здесь происходит?" или Краткое руководство
+                                начинающего Квизера
+                            </h4>
+                        </div>
+                    </a>
+                    <div class="news__tabs" data-js-news-tabs>
+                        <button
+                            class="news__tab tab-1"
+                            data-js-news-tab1
+                        ></button>
+                        <button
+                            class="news__tab tab-2"
+                            data-js-news-tab2
+                        ></button>
+                        <button
+                            class="news__tab tab-3"
+                            data-js-news-tab3
+                        ></button>
+                    </div>
+                </div>
+            </section>
+            <section class="tests-slider">
+                <div class="tests-slider__heading container">
+                    <div>
+                        <a
+                            href="./tests.html"
+                            class="tests-slider__title h2 weight-600"
+                        >
+                            Актуальные тесты
+                        </a>
+                        <p class="tests-slider__subtitle">
+                            Самые высокооцененные тесты от наших авторов за
+                            неделю.
+                        </p>
+                    </div>
+                    <a
+                        href="./tests.html"
+                        class="tests-slider__heading__all-tests visible-mobile-above button button-dark weight-600"
+                        >ВСЕ ТЕСТЫ</a
+                    >
+                </div>
+                <div class="slider-wrapper container">
+                    <ul class="slider__list slider-list" data-js-slider-list>
+                        <li
+                            class="slider__item slider-item"
+                            data-js-slider-item
+                            test-id="1"
+                        >
+                            <a
+                                data-js-test-link
+                                data-js-test-a-link
+                                class="slider-item__link"
+                            >
+                                <img
+                                    data-js-test-image
+                                    width="382"
+                                    height="230"
+                                    alt=""
+                                    class="slider-item__img"
+                                />
+                            </a>
+                            <div class="slider-item__content">
+                                <div class="slider-item__top">
+                                    <a
+                                        href="#"
+                                        class="slider-item__profile-link username"
+                                        data-title="Автор"
+                                    >
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            class="slider-item__profile-link__user-avatar"
+                                            alt=""
+                                            data-js-user-avatar
+                                        />
+                                        <span
+                                            class="slider-item__profile-link__user-name"
+                                            data-js-user-name
+                                        >
+                                        </span>
+                                    </a>
+                                    <a
+                                        class="slider-item__statistics-link"
+                                        href="#"
+                                        data-title="Статистика и комментарии"
+                                    >
+                                        <svg
+                                            fill="#ffffff"
+                                            height="18"
+                                            width="18"
+                                            version="1.1"
+                                            id="Capa_1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            viewBox="0 0 294 294"
+                                            xml:space="preserve"
+                                            stroke="#ffffff"
+                                        >
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <g>
+                                                    <path
+                                                        d="M279,250H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h264c8.284,0,15-6.716,15-15S287.284,250,279,250z"
+                                                    ></path>
+                                                    <path
+                                                        d="M30.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-130c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v130 C21,223.747,25.253,228,30.5,228z"
+                                                    ></path>
+                                                    <path
+                                                        d="M123.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-195c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v195 C114,223.747,118.253,228,123.5,228z"
+                                                    ></path>
+                                                    <path
+                                                        d="M216.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-105c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v105 C207,223.747,211.253,228,216.5,228z"
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="slider-item__info">
+                                    <a
+                                        class="slider-item__info__title"
+                                        data-js-test-a-link
+                                        data-js-test-title
+                                    ></a>
+                                    <p
+                                        class="slider-item__info__description"
+                                        data-js-test-description
+                                    ></p>
+                                </div>
+                            </div>
+                            <div class="slider-item__trophies">
+                                <img
+                                    class="slider-item__trophies__star"
+                                    height="40"
+                                    width="40"
+                                    src="./images/test/svgs/crystal.svg"
+                                    alt=""
+                                />
+                                <img
+                                    class="slider-item__trophies__crown"
+                                    height="40"
+                                    width="40"
+                                    src="./images/test/svgs/crown.svg"
+                                    alt=""
+                                />
+                                <img
+                                    class="slider-item__trophies__rocket"
+                                    height="40"
+                                    width="40"
+                                    src="./images/test/svgs/rocket.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="slider-item__bottom">
+                                <ul class="slider-item__statistics">
+                                    <li
+                                        class="slider-item__rating slider-item__grade"
+                                        data-title="Оценка по десятибальной шкале (Кол-во оценок)"
+                                    >
+                                        <img
+                                            width="20"
+                                            height="20"
+                                            src="./images/test/svgs/energy.svg"
+                                            alt=""
+                                        />
+                                        <a href="#" class="">
+                                            <span data-js-grade></span>
+                                            <span class="gray"> (</span>
+                                            <span
+                                                data-js-number-of-ratings
+                                            ></span>
+                                            <span class="gray">)</span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="slider-item__rating slider-item__visitors"
+                                        data-title="Количество уникальных прохождений"
+                                    >
+                                        <img
+                                            width="20"
+                                            height="20"
+                                            src="./images/test/svgs/persons.svg"
+                                            alt=""
+                                        />
+                                        <a
+                                            href="#"
+                                            data-js-visitors
+                                            class=""
+                                        ></a>
+                                    </li>
+                                    <li
+                                        class="slider-item__rating slider-item__questions"
+                                    >
+                                        <img
+                                            width="20"
+                                            height="20"
+                                            src="./images/test/svgs/compass.svg"
+                                            alt=""
+                                            data-title="Идентификация"
+                                            data-js-identificator
+                                        />
+                                        <a
+                                            data-title="Количество вопросов"
+                                            data-js-number-of-questions
+                                            href="#"
+                                            class=""
+                                        >
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="slider-item__extra slider-item__erotic"
+                                        data-title="Тест не содержит эротических материалов"
+                                        data-js-erotic
+                                    ></li>
+                                    <li
+                                        class="slider-item__extra slider-item__badwords"
+                                        data-title="Тест не содержит ненормативную лексику"
+                                        data-js-badwords
+                                    ></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li
+                            class="slider__item slider-item"
+                            data-js-slider-item
+                            test-id="2"
+                        >
+                            <a
+                                data-js-test-link
+                                data-js-test-a-link
+                                class="slider-item__link"
+                            >
+                                <img
+                                    data-js-test-image
+                                    width="382"
+                                    height="230"
+                                    alt=""
+                                    class="slider-item__img"
+                                />
+                            </a>
+                            <div class="slider-item__content">
+                                <div class="slider-item__top">
+                                    <a
+                                        href="#"
+                                        class="slider-item__profile-link username"
+                                        data-title="Автор"
+                                    >
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            class="slider-item__profile-link__user-avatar"
+                                            alt=""
+                                            data-js-user-avatar
+                                        />
+                                        <span
+                                            class="slider-item__profile-link__user-name"
+                                            data-js-user-name
+                                        >
+                                        </span>
+                                    </a>
+                                    <a
+                                        class="slider-item__statistics-link"
+                                        href="#"
+                                        data-title="Статистика и комментарии"
+                                    >
+                                        <svg
+                                            fill="#ffffff"
+                                            height="18"
+                                            width="18"
+                                            version="1.1"
+                                            id="Capa_1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            viewBox="0 0 294 294"
+                                            xml:space="preserve"
+                                            stroke="#ffffff"
+                                        >
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <g>
+                                                    <path
+                                                        d="M279,250H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h264c8.284,0,15-6.716,15-15S287.284,250,279,250z"
+                                                    ></path>
+                                                    <path
+                                                        d="M30.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-130c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v130 C21,223.747,25.253,228,30.5,228z"
+                                                    ></path>
+                                                    <path
+                                                        d="M123.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-195c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v195 C114,223.747,118.253,228,123.5,228z"
+                                                    ></path>
+                                                    <path
+                                                        d="M216.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-105c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v105 C207,223.747,211.253,228,216.5,228z"
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="slider-item__info">
+                                    <a
+                                        class="slider-item__info__title"
+                                        data-js-test-a-link
+                                        data-js-test-title
+                                    ></a>
+                                    <p
+                                        class="slider-item__info__description"
+                                        data-js-test-description
+                                    ></p>
+                                </div>
+                            </div>
+                            <div class="slider-item__trophies">
+                                <img
+                                    class="slider-item__trophies__star"
+                                    height="40"
+                                    width="40"
+                                    src="./images/test/svgs/crystal.svg"
+                                    alt=""
+                                />
+                                <img
+                                    class="slider-item__trophies__crown"
+                                    height="40"
+                                    width="40"
+                                    src="./images/test/svgs/crown.svg"
+                                    alt=""
+                                />
+                                <img
+                                    class="slider-item__trophies__rocket"
+                                    height="40"
+                                    width="40"
+                                    src="./images/test/svgs/rocket.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="slider-item__bottom">
+                                <ul class="slider-item__statistics">
+                                    <li
+                                        class="slider-item__rating slider-item__grade"
+                                        data-title="Оценка по десятибальной шкале (Кол-во оценок)"
+                                    >
+                                        <img
+                                            width="20"
+                                            height="20"
+                                            src="./images/test/svgs/energy.svg"
+                                            alt=""
+                                        />
+                                        <a href="#" class="">
+                                            <span data-js-grade></span>
+                                            <span class="gray"> (</span>
+                                            <span
+                                                data-js-number-of-ratings
+                                            ></span>
+                                            <span class="gray">)</span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="slider-item__rating slider-item__visitors"
+                                        data-title="Количество уникальных прохождений"
+                                    >
+                                        <img
+                                            width="20"
+                                            height="20"
+                                            src="./images/test/svgs/persons.svg"
+                                            alt=""
+                                        />
+                                        <a
+                                            href="#"
+                                            data-js-visitors
+                                            class=""
+                                        ></a>
+                                    </li>
+                                    <li
+                                        class="slider-item__rating slider-item__questions"
+                                    >
+                                        <img
+                                            width="20"
+                                            height="20"
+                                            src="./images/test/svgs/compass.svg"
+                                            alt=""
+                                            data-title="Идентификация"
+                                            data-js-identificator
+                                        />
+                                        <a
+                                            data-title="Количество вопросов"
+                                            data-js-number-of-questions
+                                            href="#"
+                                            class=""
+                                        >
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="slider-item__extra slider-item__erotic"
+                                        data-title="Тест не содержит эротических материалов"
+                                        data-js-erotic
+                                    ></li>
+                                    <li
+                                        class="slider-item__extra slider-item__badwords"
+                                        data-title="Тест не содержит ненормативную лексику"
+                                        data-js-badwords
+                                    ></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li
+                            class="slider__item slider-item"
+                            data-js-slider-item
+                            test-id="3"
+                        >
+                            <a
+                                data-js-test-link
+                                data-js-test-a-link
+                                class="slider-item__link"
+                            >
+                                <img
+                                    data-js-test-image
+                                    width="382"
+                                    height="230"
+                                    alt=""
+                                    class="slider-item__img"
+                                />
+                            </a>
+                            <div class="slider-item__content">
+                                <div class="slider-item__top">
+                                    <a
+                                        href="#"
+                                        class="slider-item__profile-link username"
+                                        data-title="Автор"
+                                    >
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            class="slider-item__profile-link__user-avatar"
+                                            alt=""
+                                            data-js-user-avatar
+                                        />
+                                        <span
+                                            class="slider-item__profile-link__user-name"
+                                            data-js-user-name
+                                        >
+                                        </span>
+                                    </a>
+                                    <a
+                                        class="slider-item__statistics-link"
+                                        href="#"
+                                        data-title="Статистика и комментарии"
+                                    >
+                                        <svg
+                                            fill="#ffffff"
+                                            height="18"
+                                            width="18"
+                                            version="1.1"
+                                            id="Capa_1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            viewBox="0 0 294 294"
+                                            xml:space="preserve"
+                                            stroke="#ffffff"
+                                        >
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <g>
+                                                    <path
+                                                        d="M279,250H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h264c8.284,0,15-6.716,15-15S287.284,250,279,250z"
+                                                    ></path>
+                                                    <path
+                                                        d="M30.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-130c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v130 C21,223.747,25.253,228,30.5,228z"
+                                                    ></path>
+                                                    <path
+                                                        d="M123.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-195c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v195 C114,223.747,118.253,228,123.5,228z"
+                                                    ></path>
+                                                    <path
+                                                        d="M216.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-105c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v105 C207,223.747,211.253,228,216.5,228z"
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="slider-item__info">
+                                    <a
+                                        class="slider-item__info__title"
+                                        data-js-test-a-link
+                                        data-js-test-title
+                                    ></a>
+                                    <p
+                                        class="slider-item__info__description"
+                                        data-js-test-description
+                                    ></p>
+                                </div>
+                            </div>
+                            <div class="slider-item__trophies">
+                                <img
+                                    class="slider-item__trophies__star"
+                                    height="40"
+                                    width="40"
+                                    src="./images/test/svgs/crystal.svg"
+                                    alt=""
+                                />
+                                <img
+                                    class="slider-item__trophies__crown"
+                                    height="40"
+                                    width="40"
+                                    src="./images/test/svgs/crown.svg"
+                                    alt=""
+                                />
+                                <img
+                                    class="slider-item__trophies__rocket"
+                                    height="40"
+                                    width="40"
+                                    src="./images/test/svgs/rocket.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="slider-item__bottom">
+                                <ul class="slider-item__statistics">
+                                    <li
+                                        class="slider-item__rating slider-item__grade"
+                                        data-title="Оценка по десятибальной шкале (Кол-во оценок)"
+                                    >
+                                        <img
+                                            width="20"
+                                            height="20"
+                                            src="./images/test/svgs/energy.svg"
+                                            alt=""
+                                        />
+                                        <a href="#" class="">
+                                            <span data-js-grade></span>
+                                            <span class="gray"> (</span>
+                                            <span
+                                                data-js-number-of-ratings
+                                            ></span>
+                                            <span class="gray">)</span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="slider-item__rating slider-item__visitors"
+                                        data-title="Количество уникальных прохождений"
+                                    >
+                                        <img
+                                            width="20"
+                                            height="20"
+                                            src="./images/test/svgs/persons.svg"
+                                            alt=""
+                                        />
+                                        <a
+                                            href="#"
+                                            data-js-visitors
+                                            class=""
+                                        ></a>
+                                    </li>
+                                    <li
+                                        class="slider-item__rating slider-item__questions"
+                                    >
+                                        <img
+                                            width="20"
+                                            height="20"
+                                            src="./images/test/svgs/compass.svg"
+                                            alt=""
+                                            data-title="Идентификация"
+                                            data-js-identificator
+                                        />
+                                        <a
+                                            data-title="Количество вопросов"
+                                            data-js-number-of-questions
+                                            href="#"
+                                            class=""
+                                        >
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="slider-item__extra slider-item__erotic"
+                                        data-title="Тест не содержит эротических материалов"
+                                        data-js-erotic
+                                    ></li>
+                                    <li
+                                        class="slider-item__extra slider-item__badwords"
+                                        data-title="Тест не содержит ненормативную лексику"
+                                        data-js-badwords
+                                    ></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="slider-item__end">
+                            <h6 class="slider-item__end__title">НА ЭТОМ ВСЕ</h6>
+                        </li>
+                    </ul>
+
+                    <a
+                        href="./tests.html"
+                        class="tests-slider__heading__all-tests visible-mobile button button-dark weight-600"
+                        >ВСЕ ТЕСТЫ</a
+                    >
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__about footer-about">
+                    <div class="footer__title">
+                        <img
+                            loading="lazy"
+                            width="60"
+                            height="60"
+                            class="footer__logo"
+                            src="./images/logo/site_logo.png"
+                            alt=""
+                        />
+                        <p class="footer__description">
+                            У нас размещены тысячи разнообразных тестов и
+                            квизов, с помощью которых можно приятно провести
+                            время, узнать о себе что-то новое и сравнить
+                            предпочтения с мнением широкой аудитории.
+                        </p>
+                    </div>
+                    <ul class="footer__links">
+                        <li class="footer__link">
+                            <p class="footer-menu-link-main h6">
+                                По всем вопросам:
+                            </p>
+                            <a
+                                target="_blank"
+                                class="footer__mainlink"
+                                href="mailto:ryabatema@gmail.com"
+                                >ryabatema@gmail.com</a
+                            >
+                        </li>
+                        <li class="footer__link">
+                            <p class="footer-menu-link-main h6">
+                                Реклама на сайте:
+                            </p>
+                            <a target="_blank" class="footer__mainlink" href="#"
+                                >Заказать
+                            </a>
+                        </li>
+                        <li class="footer__link">
+                            <p class="footer-menu-link-main h6">
+                                Мы в соцсетях:
+                            </p>
+                            <div class="footer__soc1als">
+                                <a
+                                    target="_blank"
+                                    class="footer__soc1al"
+                                    href="#"
+                                >
+                                    <img
+                                        width="30"
+                                        height="30"
+                                        src="./images/menu/telegram.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    target="_blank"
+                                    class="footer__soc1al"
+                                    href="#"
+                                >
+                                    <img
+                                        width="30"
+                                        height="30"
+                                        src="./images/menu/github.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    target="_blank"
+                                    class="footer__soc1al"
+                                    href="#"
+                                >
+                                    <img
+                                        width="30"
+                                        height="30"
+                                        src="./images/menu/leetcode.svg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer__menu footer-menu">
+                    <li class="footer-menu__item">
+                        <a class="footer-menu-link footer-menu-link-main h6">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./images/menu/rocket.svg"
+                                alt=""
+                            />
+                            <span>Тесты</span>
+                        </a>
+                        <a href="#" class="footer-menu-link"> Интересные </a>
+                        <a href="#" class="footer-menu-link"> Новые </a>
+                        <a href="#" class="footer-menu-link"> Лучшие </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu-link footer-menu-link-main h6">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./images/menu/note.svg"
+                                alt=""
+                            />
+                            <span>Посты</span>
+                        </a>
+                        <a href="#" class="footer-menu-link"> Актуальные </a>
+                        <a href="#" class="footer-menu-link"> Новые </a>
+                        <a href="#" class="footer-menu-link"> Лучшие </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu-link footer-menu-link-main h6">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./images/menu/leaderboard.svg"
+                                alt=""
+                            />
+                            <span>Топ</span>
+                        </a>
+                        <a href="#" class="footer-menu-link"> Пользователей </a>
+                        <a href="#" class="footer-menu-link"> Блогов </a>
+                        <a href="#" class="footer-menu-link">
+                            Тестов за все время
+                        </a>
+                        <a href="#" class="footer-menu-link">
+                            Тестов за все месяц
+                        </a>
+                        <a href="#" class="footer-menu-link"> Редакторов </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu-link footer-menu-link-main h6">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./images/menu/book.svg"
+                                alt=""
+                            />
+                            <span>Библиотека</span>
+                        </a>
+                        <a href="#" class="footer-menu-link"> Новости </a>
+                        <a href="#" class="footer-menu-link">
+                            Обучающие материалы
+                        </a>
+                        <a href="#" class="footer-menu-link">
+                            Политика конфидециальности
+                        </a>
+                        <a href="#" class="footer-menu-link">
+                            Правила сообщества
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu-link footer-menu-link-main h6">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./images/menu/bulb.svg"
+                                alt=""
+                            />
+                            <span>Создать</span>
+                        </a>
+                        <a href="#" class="footer-menu-link"> Турнир </a>
+                        <a href="#" class="footer-menu-link"> Текст </a>
+                        <a href="#" class="footer-menu-link">
+                            Текстовый квест
+                        </a>
+                        <a href="#" class="footer-menu-link"> Пост </a>
+                        <a href="#" class="footer-menu-link"> Стрим </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

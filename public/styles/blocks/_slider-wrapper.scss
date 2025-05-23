@@ -1,0 +1,11 @@
+@use "../helpers" as *;
+
+.slider-wrapper{
+    padding-top: rem(30);
+    padding-bottom: rem(60);
+    position: relative;
+    @include mobile{
+        padding-block: rem(20);
+    }
+
+}

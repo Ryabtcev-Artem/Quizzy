@@ -1,0 +1,48 @@
+@use "../helpers" as *;
+
+.news{
+    border-radius: var(--border-radius);
+    background-color: var(--color-gray-15);
+    animation: blueBorderGlow 3s infinite linear;
+    @keyframes blueBorderGlow {
+        0%{
+            outline: rem(2) solid var(--color-gray-15);
+        }
+        50%{
+            outline: rem(2) solid #4e9cff;
+        }
+        100%{
+            outline: rem(2) solid var(--color-gray-15);
+        }
+    }
+    transition: var(--transition-duration);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &__tabs{
+        position: absolute;
+        bottom: rem(10);
+        display: flex;
+        align-items: end;
+        column-gap: rem(6);
+        @include tablet{
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            row-gap: rem(4);
+            right: rem(10);
+            width: rem(0);
+            height: 90%;
+        }
+    }
+    &__tab{
+        height: rem(10);
+        width: rem(70);
+        background-color: var(--color-gray-15);
+        border: var(--border-2);
+        @include tablet{
+            height: rem(46);
+            width: rem(14);
+        }
+    }
+}

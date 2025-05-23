@@ -1,0 +1,21 @@
+@use "../helpers" as *;
+
+.no-content{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../images/background/sad_cosmonaut.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include mobile-small{
+        background-position: 70%;
+    }
+    &__title{
+        font-weight: 700;
+    }
+}

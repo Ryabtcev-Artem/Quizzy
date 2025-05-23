@@ -1,0 +1,20 @@
+@use "../helpers" as *;
+
+.test-window{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../images/test/windowTest/test-window-bg.svg') no-repeat;
+    background-position: top center;
+    background-size: cover;
+    @include tablet{
+        background-size: auto;
+    }
+    width: 100%;
+    min-height: calc(100vh - rem(45));
+    padding: rem(20) rem(130);
+    @include mobile-small{
+        padding: rem(30) rem(16);
+    }
+}

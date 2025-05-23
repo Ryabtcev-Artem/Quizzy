@@ -1,0 +1,28 @@
+@use "../helpers" as *;
+
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    width: rem(600);
+    margin-inline: auto;
+    margin-bottom: rem(20);
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: rem(8);
+    }
+    @include mobile{
+        margin-block: rem(14);
+    }
+    @include mobile-small{
+        width: 100%;
+        margin-inline: 0;
+        padding-inline: rem(10);
+    }
+    &__img{
+        @include mobile-small{
+            width: rem(18);
+        }
+    }
+}

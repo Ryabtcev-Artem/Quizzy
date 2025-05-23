@@ -1,0 +1,45 @@
+@use "helpers" as *;
+:root {
+    // Грей шкала
+    --color-black: #000000;
+    --color-gray-5: #0f0f0f;
+    --color-gray-5-opacity: #0f0f0fec;
+    --color-gray-10: #1a1a1a;
+    --color-gray-10-opacity: #1a1a1aea;
+    --color-gray-15: #262626;
+    --color-gray-15-opacity: #262626cb;
+    --color-gray-20: #333333;
+    --color-gray-30: #4d4d4d;
+    --color-gray-35: #a1a1a1;
+    --color-gray-30-opacity: #4d4d4d62;
+    --color-gray-40: #e0e0e0;
+    --color-white: #ffffff;
+
+    // Акценты
+    --color-accent: #4e9cff;
+    --color-accent-dark: #2b6cb0;
+    --color-accent-opacity: #2b6bb09a;
+
+    // Состояния
+    --color-success: #81c784;
+    --color-error: #e57373;
+
+    --transition-duration: 0.2s;
+
+    --font-family-base: sans-serif;
+    --font-family-accent: "Arial";
+
+    --container-width: #{rem(1600)};
+    --container-padding-x: #{rem(16)};
+    --dark-border-1: #{rem(1) solid #1a1a1a};
+    --border-1: #{rem(1)} solid #4d4d4d;
+    --border-2: #{rem(2)} solid #4d4d4d;
+    --border-radius: #{rem(6)};
+
+    --100vw: calc(100vw - var(--scrollbar-width));
+
+    @include laptop {
+        --container-width: #{rem(1280)};
+    }
+}
+

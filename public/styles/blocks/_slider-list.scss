@@ -1,0 +1,11 @@
+@use "../helpers" as *;
+.slider-list{
+    & *{
+        user-select: none;
+        -webkit-user-drag: none;
+        touch-action: pan-y;
+    }
+    display: flex;
+    column-gap: rem(8);
+    overflow-x: visible;
+}

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="icon" href="./images/svgs/crown_logo.svg" />
+        <script src="./scripts/main.js" type="module"></script>
+        <title></title>
+    </head>
+    <body test-id="2">
+        <header class="header">
+            <div class="header__container" data-js-header-element>
+                <div class="header__menu-wrap">
+                    <nav class="header__menu container">
+                        <div class="header__overlay" data-js-overlay></div>
+                        <a class="header__logo" href="#">
+                            <img
+                                width="60"
+                                height="60"
+                                src="./images/logo/site_logo.png"
+                                loading="lazy"
+                                alt=""
+                            />
+                        </a>
+                        <ul class="header__list" data-js-menu-list>
+                            <li class="header__item is-active">
+                                <a class="header__link" href="./index.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/main.svg"
+                                        alt=""
+                                    />
+                                    <span>ГЛАВНАЯ</span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="./tests.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/rocket.svg"
+                                        alt=""
+                                    />
+                                    <span>ТЕСТЫ</span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="./posts.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/note.svg"
+                                        alt=""
+                                    />
+                                    <span>ПОСТЫ</span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="./top.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/leaderboard.svg"
+                                        alt=""
+                                    />
+                                    <span>ТОПЫ</span>
+                                </a>
+                            </li>
+                            <p class="our-links visible-tablet">Мы везде:</p>
+                            <li class="header__item visible-tablet">
+                                <a class="header__link" href="t.me/ryabtcevv">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/telegram.svg"
+                                        alt=""
+                                    />
+                                    <span>TELEGRAM</span>
+                                </a>
+                            </li>
+                            <li class="header__item visible-tablet">
+                                <a
+                                    class="header__link"
+                                    href="https://github.com/Ryabtcev-Artem"
+                                >
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/github.svg"
+                                        alt=""
+                                    />
+                                    <span>GITHUB</span>
+                                </a>
+                            </li>
+                            <li class="header__item visible-tablet">
+                                <a
+                                    class="header__link"
+                                    href="https://leetcode.com/u/ryabtcev/"
+                                >
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/leetcode.svg"
+                                        alt=""
+                                    />
+                                    <span>LEETCODE</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__righted">
+                            <div
+                                class="header__burger-button burger-button visible-tablet"
+                                data-js-mobile-menu
+                            >
+                                <span class="burger-button__line"></span>
+                                <span class="burger-button__line"></span>
+                                <span class="burger-button__line"></span>
+                            </div>
+                            <a href="#" class="login button button-accent">
+                                <span class="icon-login">ВХОД</span>
+                            </a>
+                            <button class="search">
+                                <img
+                                    width="30"
+                                    height="30"
+                                    src="./images/svgs/search.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="test-pass container" data-js-test-pass>
+                <div class="test-pass__wrapper">
+                    <h1 class="test-pass__title white-600" data-js-test-pass-title>
+                    </h1>
+                    <ul class="test-pass__list">
+                        <li class="test-pass__item">
+                            <span>Пройдено:</span>
+                            <time
+                                class="test-pass__date white-600"
+                                datetime=""
+                                data-js-test-pass-date
+                                ></time
+                            >
+                        </li>
+                        <li class="test-pass__item">
+                            <span>Режим:</span>
+                            <span
+                            data-js-test-pass-type
+                            class="test-pass__type white-600"
+                                ></span
+                            >
+                        </li>
+                        <li class="test-pass__item">
+                            <span>Автор теста:</span>
+                            <a 
+                            data-js-test-pass-author
+                            class="test-pass__author white-600"></a>
+                        </li>
+                    </ul>
+                    <div class="test-pass__buttons">
+                        <a href="#" class="test-pass__stat button-dark">
+                            <svg
+                                fill="#4e9cff"
+                                height="20"
+                                width="20"
+                                version="1.1"
+                                id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 294 294"
+                                xml:space="preserve"
+                                stroke="#ffffff"
+                            >
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <path
+                                            d="M279,250H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h264c8.284,0,15-6.716,15-15S287.284,250,279,250z"
+                                        ></path>
+                                        <path
+                                            d="M30.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-130c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v130 C21,223.747,25.253,228,30.5,228z"
+                                        ></path>
+                                        <path
+                                            d="M123.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-195c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v195 C114,223.747,118.253,228,123.5,228z"
+                                        ></path>
+                                        <path
+                                            d="M216.5,228h47c5.247,0,9.5-4.253,9.5-9.5v-105c0-5.247-4.253-9.5-9.5-9.5h-47c-5.247,0-9.5,4.253-9.5,9.5v105 C207,223.747,211.253,228,216.5,228z"
+                                        ></path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="white-600">Статистика</span>
+                        </a>
+                        <a class="test-pass__to-test button-dark" data-js-test-pass-to-test>
+                            <img
+                                width="20"
+                                height="20"
+                                src="./images/menu/rocket.svg"
+                                alt=""
+                            />
+                            <span class="white-600">К тесту</span>
+                        </a>
+                    </div>
+                    <h4 class="light-gray">Результат</h4>
+                    <div class="test-pass__result" data-js-test-pass-result>
+                        <img
+                        class="test-pass__result__image"
+                            width="260"
+                            height="260"
+                            data-js-test-pass-result-image
+                            loading="lazy"
+                            alt=""
+                        />
+                        <div class="test-pass__result__info">
+                            <h4 class="test-pass__result__title white-600" data-js-test-pass-result-title>
+                            </h4>
+                            <p class="test-pass__result__description" data-js-test-pass-result-description>
+                            </p>
+                        </div>
+                    </div>
+                    <h4 class="light-gray">Вопросы и ответы</h4>
+                    <div class="test-pass__answers" data-js-test-pass-answers>
+                     
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__about footer-about">
+                    <div class="footer__title">
+                        <img
+                            loading="lazy"
+                            width="60"
+                            height="60"
+                            class="footer__logo"
+                            src="./images/logo/site_logo.png"
+                            alt=""
+                        />
+                        <p class="footer__description">
+                            У нас размещены тысячи разнообразных тестов и
+                            квизов, с помощью которых можно приятно провести
+                            время, узнать о себе что-то новое и сравнить
+                            предпочтения с мнением широкой аудитории.
+                        </p>
+                    </div>
+                    <ul class="footer__links">
+                        <li class="footer__link">
+                            <p class="footer-menu-link-main h6">
+                                По всем вопросам:
+                            </p>
+                            <a
+                                target="_blank"
+                                class="footer__mainlink"
+                                href="mailto:ryabatema@gmail.com"
+                                >ryabatema@gmail.com</a
+                            >
+                        </li>
+                        <li class="footer__link">
+                            <p class="footer-menu-link-main h6">
+                                Реклама на сайте:
+                            </p>
+                            <a target="_blank" class="footer__mainlink" href="#"
+                                >Заказать
+                            </a>
+                        </li>
+                        <li class="footer__link">
+                            <p class="footer-menu-link-main h6">
+                                Мы в соцсетях:
+                            </p>
+                            <div class="footer__soc1als">
+                                <a
+                                    target="_blank"
+                                    class="footer__soc1al"
+                                    href="#"
+                                >
+                                    <img
+                                        width="30"
+                                        height="30"
+                                        src="./images/menu/telegram.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    target="_blank"
+                                    class="footer__soc1al"
+                                    href="#"
+                                >
+                                    <img
+                                        width="30"
+                                        height="30"
+                                        src="./images/menu/github.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    target="_blank"
+                                    class="footer__soc1al"
+                                    href="#"
+                                >
+                                    <img
+                                        width="30"
+                                        height="30"
+                                        src="./images/menu/leetcode.svg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer__menu footer-menu">
+                    <li class="footer-menu__item">
+                        <a class="footer-menu-link footer-menu-link-main h6">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./images/menu/rocket.svg"
+                                alt=""
+                            />
+                            <span>Тесты</span>
+                        </a>
+                        <a href="#" class="footer-menu-link"> Интересные </a>
+                        <a href="#" class="footer-menu-link"> Новые </a>
+                        <a href="#" class="footer-menu-link"> Лучшие </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu-link footer-menu-link-main h6">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./images/menu/note.svg"
+                                alt=""
+                            />
+                            <span>Посты</span>
+                        </a>
+                        <a href="#" class="footer-menu-link"> Актуальные </a>
+                        <a href="#" class="footer-menu-link"> Новые </a>
+                        <a href="#" class="footer-menu-link"> Лучшие </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu-link footer-menu-link-main h6">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./images/menu/leaderboard.svg"
+                                alt=""
+                            />
+                            <span>Топ</span>
+                        </a>
+                        <a href="#" class="footer-menu-link"> Пользователей </a>
+                        <a href="#" class="footer-menu-link"> Блогов </a>
+                        <a href="#" class="footer-menu-link">
+                            Тестов за все время
+                        </a>
+                        <a href="#" class="footer-menu-link">
+                            Тестов за все месяц
+                        </a>
+                        <a href="#" class="footer-menu-link"> Редакторов </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu-link footer-menu-link-main h6">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./images/menu/book.svg"
+                                alt=""
+                            />
+                            <span>Библиотека</span>
+                        </a>
+                        <a href="#" class="footer-menu-link"> Новости </a>
+                        <a href="#" class="footer-menu-link">
+                            Обучающие материалы
+                        </a>
+                        <a href="#" class="footer-menu-link">
+                            Политика конфидециальности
+                        </a>
+                        <a href="#" class="footer-menu-link">
+                            Правила сообщества
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu-link footer-menu-link-main h6">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./images/menu/bulb.svg"
+                                alt=""
+                            />
+                            <span>Создать</span>
+                        </a>
+                        <a href="#" class="footer-menu-link"> Турнир </a>
+                        <a href="#" class="footer-menu-link"> Текст </a>
+                        <a href="#" class="footer-menu-link">
+                            Текстовый квест
+                        </a>
+                        <a href="#" class="footer-menu-link"> Пост </a>
+                        <a href="#" class="footer-menu-link"> Стрим </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

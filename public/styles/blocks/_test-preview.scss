@@ -1,0 +1,9 @@
+@use "../helpers" as *;
+
+.test-preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: rem(20);
+}

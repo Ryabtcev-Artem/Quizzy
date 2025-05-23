@@ -1,0 +1,67 @@
+@use "../helpers" as *;
+
+.footer{
+    background-color: var(--color-gray-15);
+    position: relative;
+    &__container{
+        padding-top: rem(30);
+        padding-bottom: rem(40);
+        display: grid;
+        grid-template-columns: 40% auto;
+        @include laptop{
+            grid-template-columns: 30% auto;
+        }
+        @include tablet{
+            padding-top: rem(26);
+            grid-template-columns: repeat(1,1fr);
+            row-gap: rem(28);
+        }
+        column-gap: rem(20);
+    }
+    &__links{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(20);
+        @include laptop{
+            row-gap: rem(6);
+            grid-template-columns: repeat(1,1fr);
+        }
+        @include mobile{
+            display: flex;
+            max-width: fit-content;
+        }
+    }
+    &__link{
+        @include mobile{
+            font-size: rem(14);
+            display: inline;
+            column-gap: rem(6);
+            &:last-child{
+                position: absolute;
+                right: rem(16);
+                top: rem(26);
+                .h6{
+                    font-size: 0;
+                }
+            }
+        }
+    }
+    &__mainlink{
+        font-size: fluid(20,14);
+        color: var(--color-accent);
+    }
+    &__soc1als{
+        display: flex;
+        column-gap: rem(8);
+    }
+    &__soc1al{
+        border-radius: var(--border-radius);
+        background-color: var(--color-gray-30);
+        padding: rem(6);
+        @include tablet{
+            width: rem(32);
+            height: rem(32);
+            padding: rem(4);
+        }
+    }
+}

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="icon" href="./images/svgs/crown_logo.svg" />
+        <script src="./scripts/main.js" type="module"></script>
+        <title></title>
+    </head>
+    <body test-id="1">
+        <header class="header">
+            <div class="header__container" data-js-header-element>
+                <div class="header__menu-wrap">
+                    <nav class="header__menu container">
+                        <div class="header__overlay" data-js-overlay></div>
+                        <a class="header__logo" href="">
+                            <img
+                                width="60"
+                                height="60"
+                                src="./images/logo/site_logo.png"
+                                loading="lazy"
+                                alt=""
+                            />
+                        </a>
+                        <ul class="header__list" data-js-menu-list>
+                            <li class="header__item">
+                                <a class="header__link" href="./index.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/main.svg"
+                                        alt=""
+                                    />
+                                    <span>ГЛАВНАЯ</span>
+                                </a>
+                            </li>
+                            <li class="header__item is-active">
+                                <a class="header__link" href="./tests.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/rocket.svg"
+                                        alt=""
+                                    />
+                                    <span>ТЕСТЫ</span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="./posts.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/note.svg"
+                                        alt=""
+                                    />
+                                    <span>ПОСТЫ</span>
+                                </a>
+                            </li>
+
+                            <li class="header__item">
+                                <a class="header__link" href="./top.html">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/leaderboard.svg"
+                                        alt=""
+                                    />
+                                    <span>ТОПЫ</span>
+                                </a>
+                            </li>
+                            <p class="our-links visible-mobile">Мы везде:</p>
+                            <li class="header__item visible-mobile">
+                                <a class="header__link" href="t.me/ryabtcevv">
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/telegram.svg"
+                                        alt=""
+                                    />
+                                    <span>TELEGRAM</span>
+                                </a>
+                            </li>
+                            <li class="header__item visible-mobile">
+                                <a
+                                    class="header__link"
+                                    href="https://github.com/Ryabtcev-Artem"
+                                >
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/github.svg"
+                                        alt=""
+                                    />
+                                    <span>GITHUB</span>
+                                </a>
+                            </li>
+                            <li class="header__item visible-mobile">
+                                <a
+                                    class="header__link"
+                                    href="https://leetcode.com/u/ryabtcev/"
+                                >
+                                    <img
+                                        class="header__item-img"
+                                        width="26"
+                                        height="26"
+                                        src="./images/menu/leetcode.svg"
+                                        alt=""
+                                    />
+                                    <span>LEETCODE</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__righted">
+                            <div
+                                class="header__burger-button burger-button visible-tablet"
+                                data-js-mobile-menu
+                            >
+                                <span class="burger-button__line"></span>
+                                <span class="burger-button__line"></span>
+                                <span class="burger-button__line"></span>
+                            </div>
+                            <a href="" class="login button button-accent">
+                                <span class="icon-login">ВХОД</span>
+                            </a>
+                            <button class="search">
+                                <img
+                                    width="30"
+                                    height="30"
+                                    src="./images/svgs/search.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-alt visually-hidden" data-js-header-alt>
+                <span class="header-alt__name white" data-js-header-name></span>
+                <span class="header-alt__etap" data-js-etap></span>
+                <div class="header-alt__menu">
+                    <a
+                        href="#"
+                        class="header-alt__item header-alt__step-back"
+                        data-js-step-back
+                    >
+                        <img
+                            width="16"
+                            height="16"
+                            src="./images/test/header/back-left.svg"
+                            alt=""
+                        />
+                        <span>Шаг назад</span>
+                    </a>
+                    <a
+                        href="#"
+                        class="header-alt__item header-alt__clear"
+                        data-js-drop
+                    >
+                        <img
+                            width="16"
+                            height="16"
+                            src="./images/test/header/bin.svg"
+                            alt=""
+                        />
+                        <span>Сброс</span>
+                    </a>
+                    <a
+                        href="./index.html"
+                        class="header-alt__item header-alt__back"
+                    >
+                        <img
+                            width="16"
+                            height="16"
+                            src="./images/test/header/home.svg"
+                            alt=""
+                        />
+                        <span>Выход</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="load-resources active" data-js-load-resources>
+                <div class="load-resources__loader">
+                    <img
+                        src="./images/test/totest/loading.svg"
+                        width="60"
+                        height="60"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <div class="modal-dialog" data-js-modal>
+                <div class="modal-dialog__content" data-js-modal-content>
+                    <h4 class="modal-dialog__title" data-js-modal-title></h4>
+                    <p
+                        class="modal-dialog__description"
+                        data-js-modal-description
+                    ></p>
+                    <div class="modal-dialog__footer">
+                        <button
+                            type="button"
+                            class="modal-dialog__yes"
+                            data-js-modal-yes
+                        ></button>
+                        <button
+                            type="button"
+                            class="modal-dialog__no"
+                            data-js-modal-no
+                        ></button>
+                    </div>
+                </div>
+            </div>
+            <div class="test-preview" data-js-test-preview>
+                <section class="top-menu" data-js-top-menu>
+                    <a class="top-menu__item back" href="./index.html">
+                        <img
+                            class="top-menu__img"
+                            width="24"
+                            height="24"
+                            src="./images/test/totest/arrow-left.svg"
+                            alt=""
+                        />
+                        <span>НАЗАД</span>
+                    </a>
+                    <a href="" class="top-menu__item statistics">
+                        <span>СТАТИСТИКА</span>
+                        <img
+                            class="top-menu__img"
+                            width="24"
+                            height="24"
+                            src="./images/test/totest/statistics.svg"
+                            alt=""
+                        />
+                    </a>
+                </section>
+                <section class="card-preview" data-js-card>
+                    <div
+                        class="card-preview__pretest-loader pretest-loader"
+                        data-js-pretest-loader
+                    >
+                        <div class="loading"></div>
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🌌 Подключаемся к API вселенной...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🐔 Цыплёнок утверждает верстку...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🤖 Спрашиваем ChatGPT...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >📟 Подключаемся к Wi-Fi соседа...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >💀 Делим на ноль...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🚽 Сливаем лишние стили...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🎨 Красим кнопки... 🖌️</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🧃 Превращаем баги в фичи...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🛸 Паркуем НЛО...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🍳 Готовим CSS-омлет...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >📿 Молимся, чтобы заработало...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >📕 Читаем документацию...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🔢➕📝 Складываем числа и строки...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🦿 Добавляем костыли...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🐸 Используем болотную сортировку...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >⏳ Наверстываем упущенное...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >🍞 Тостер греется, ждите...</span
+                        >
+                        <span
+                            class="pretest-loader__message visually-hidden"
+                            data-js-pretest-message
+                            >💸 Платим за сервера...</span
+                        >
+                    </div>
+                    <img
+                        width="600"
+                        height="360"
+                        alt=""
+                        class="card-preview__img"
+                        data-js-preview-image
+                    />
+                    <div class="card-preview__content">
+                        <ul class="card-preview__top">
+                            <li>
+                                <a
+                                    href=""
+                                    class="card-preview__profile-link username"
+                                    data-title="Автор"
+                                >
+                                    <img
+                                        width="24"
+                                        height="24"
+                                        class="card-preview__profile-link__user-avatar"
+                                        src=""
+                                        alt=""
+                                        data-js-preview-user-avatar
+                                    />
+                                    <span
+                                        class="card-preview__profile-link__user-name"
+                                        data-js-preview-user-name
+                                    ></span>
+                                </a>
+                            </li>
+                            <li
+                                class="card-preview__rating card-preview__grade"
+                                data-title="Оценка по десятибальной шкале (Кол-во оценок)"
+                                data-js-grade
+                            >
+                                <img
+                                    width="20"
+                                    height="20"
+                                    src="./images/test/svgs/energy-accent.svg"
+                                    alt=""
+                                />
+                                <span
+                                    class="white"
+                                    data-js-preview-grade
+                                ></span>
+                            </li>
+                            <li
+                                class="card-preview__rating card-preview__favourites"
+                                data-title="Рейтинг"
+                                data-js-grade
+                            >
+                                <img
+                                    width="20"
+                                    height="20"
+                                    src="./images/test/svgs/heart-accent.svg"
+                                    alt=""
+                                />
+                                <span
+                                    class="white"
+                                    data-js-preview-rating
+                                ></span>
+                            </li>
+                            <li
+                                class="card-preview__rating card-preview__visitors"
+                                data-title="Количество уникальных прохождений"
+                                data-js-visitors
+                            >
+                                <img
+                                    width="20"
+                                    height="20"
+                                    src="./images/test/svgs/persons-accent.svg"
+                                    alt=""
+                                />
+                                <span
+                                    class="white"
+                                    data-js-preview-visitors
+                                ></span>
+                            </li>
+                        </ul>
+                        <div class="card-preview__info">
+                            <p
+                                class="card-preview__info__type gray"
+                                data-js-preview-type
+                            ></p>
+                            <h3
+                                class="card-preview__info__title"
+                                data-js-preview-title
+                            ></h3>
+                            <p
+                                class="card-preview__info__description"
+                                data-js-preview-description
+                            ></p>
+                            <p
+                                class="gray card-preview__questions-amount"
+                                data-js-preview-questions-amount
+                            ></p>
+                        </div>
+                        <div class="card-preview__totest" data-js-totest>
+                            <a
+                                href=""
+                                class="card-preview__help-button"
+                                data-title="Информация о режиме"
+                            >
+                            </a>
+                            <a
+                                href="#"
+                                data-js-start-game-button
+                                class="card-preview__start-button"
+                                >Поехали!</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card-preview__trophies">
+                        <img
+                            class="card-preview__trophies__star"
+                            height="40"
+                            width="40"
+                            src="./images/test/svgs/crystal.svg"
+                            alt=""
+                        />
+                        <img
+                            class="card-preview__trophies__crown"
+                            height="40"
+                            width="40"
+                            src="./images/test/svgs/crown.svg"
+                            alt=""
+                        />
+                        <img
+                            class="card-preview__trophies__rocket"
+                            height="40"
+                            width="40"
+                            src="./images/test/svgs/rocket.svg"
+                            alt=""
+                        />
+                    </div>
+                    <ul class="card-preview__share" data-js-share>
+                        <li
+                            data-title="VKontakte"
+                            class="card-preview__share__button vkontakte"
+                        >
+                            <img
+                                width="40"
+                                height="40"
+                                src="./images/test/totest/vkontakte.svg"
+                                alt=""
+                            />
+                        </li>
+                        <li
+                            data-title="Whatsapp"
+                            class="card-preview__share__button whatsapp"
+                        >
+                            <img
+                                width="40"
+                                height="40"
+                                src="./images/test/totest/whatsapp.svg"
+                                alt=""
+                            />
+                        </li>
+                        <li
+                            data-title="Telegram"
+                            class="card-preview__share__button telegram"
+                        >
+                            <img
+                                width="40"
+                                height="40"
+                                src="./images/test/totest/telegram.svg"
+                                alt=""
+                            />
+                        </li>
+                        <li
+                            data-title="Скопировать ссылку"
+                            class="card-preview__share__button link"
+                        >
+                            <img
+                                width="40"
+                                height="40"
+                                src="./images/test/totest/link.svg"
+                                alt=""
+                            />
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section class="test-window visually-hidden" data-js-test-window>
+                <svg
+                    class="waves left-waves"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 28 150"
+                    preserveAspectRatio="none"
+                    shape-rendering="auto"
+                    data-js-waves
+                >
+                    <defs>
+                        <path
+                            id="gentle-wave"
+                            d="M8 -160C8 -130 26 -102 26 -72C26 -42 7.99999 -14 7.99999 16C7.99999 46 26 74 26 104C26 134 7.99999 162 7.99998 192L-36 192L-36 -160L8 -160Z"
+                        ></path>
+                    </defs>
+                    <g class="parallax">
+                        <use
+                            xlink:href="#gentle-wave"
+                            x="-5"
+                            y="48"
+                            fill="rgba(38,50,56,0.7)"
+                        ></use>
+                        <use
+                            xlink:href="#gentle-wave"
+                            x="-3"
+                            y="48"
+                            fill="rgba(78, 156, 255, 0.5)"
+                        ></use>
+                        <use
+                            xlink:href="#gentle-wave"
+                            x="0"
+                            y="48"
+                            fill="rgba(78, 156, 255, 0.7)"
+                        ></use>
+                        <use
+                            xlink:href="#gentle-wave"
+                            x="-7"
+                            y="48"
+                            fill="#263238"
+                        ></use>
+                    </g>
+                </svg>
+                <svg
+                    class="waves right-waves"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 28 150"
+                    preserveAspectRatio="none"
+                    shape-rendering="auto"
+                    data-js-waves
+                >
+                    <defs>
+                        <path
+                            id="gentle-wave2"
+                            d="M20 -160C20 -130 2 -102 2 -72C2.00001 -42 20 -14 20 16C20 46 2.00001 74 2.00001 104C2.00001 134 20 162 20 192L64 192L64 -160L20 -160Z"
+                        ></path>
+                    </defs>
+                    <g class="parallax">
+                        <use
+                            xlink:href="#gentle-wave2"
+                            x="5"
+                            y="48"
+                            fill="rgba(38,50,56,0.7)"
+                        ></use>
+                        <use
+                            xlink:href="#gentle-wave2"
+                            x="3"
+                            y="48"
+                            fill="rgba(78, 156, 255, 0.5)"
+                        ></use>
+                        <use
+                            xlink:href="#gentle-wave2"
+                            x="0"
+                            y="48"
+                            fill="rgba(78, 156, 255, 0.7)"
+                        ></use>
+                        <use
+                            xlink:href="#gentle-wave2"
+                            x="7"
+                            y="48"
+                            fill="#263238"
+                        ></use>
+                    </g>
+                </svg>
+                <div class="question-wrapper">
+                    <div class="question" data-js-question>
+                        <h4 class="question__name" data-js-question-name></h4>
+                        <div class="question__block">
+                            <div class="question__picture">
+                                <a href="#" class="open-picture">
+                                    <img
+                                        data-js-question-image
+                                        width="596"
+                                        height="596"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="question__answers" data-js-answers>
+                                <p
+                                    class="question__choose-title"
+                                    data-js-choose-title
+                                >
+                                    0 / 1
+                                </p>
+                                <div
+                                    class="question__answers-wrapper"
+                                    data-js-answers-wrapper
+                                ></div>
+                                <div
+                                    class="question__submit"
+                                    data-js-submit
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="finish" data-js-finish>
+                <canvas
+                    class="finish__canvas"
+                    data-js-fireworks-canvas
+                ></canvas>
+                <div class="finish__content" data-js-finish-content>
+                    <h5 class="finish__title">Тест пройден!</h5>
+                    <div class="finish__created-by">
+                        <p class="finish__creator">Этот тест создал для тебя</p>
+                        <img
+                            class="finish__user-avatar"
+                            height="24"
+                            width="24"
+                            data-js-finish-user-avatar
+                            alt=""
+                        />
+                        <a
+                            href="#"
+                            class="finish__user-name"
+                            data-js-finish-user-name
+                        ></a>
+                    </div>
+                    <p class="finish__register">
+                        Зарегистрировавшись вы сможете оценивать пройденные
+                        тесты, писать к ним комментарии и многое другое!
+                    </p>
+                    <div class="finish__footer">
+                        <a href="#" class="finish__to-register"
+                            >Зарегистрироваться</a
+                        >
+                        <a href="#" class="finish__to-result" data-js-to-result
+                            >Перейти к результатам</a
+                        >
+                    </div>
+                </div>
+                <div
+                    class="finish__content finish__content-loading visually-hidden"
+                    data-js-finish-content-loading
+                >
+                    <h4 class="finish__content-loading__title">
+                        Подготавливаем статистику
+                    </h4>
+                    <div
+                        class="finish__content-loading__logo"
+                        data-js-finish-content-loading-logo
+                    ></div>
+                    <h5
+                        class="finish__content-loading__messages"
+                        data-js-finish-content-loading-messages
+                    ></h5>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+@use "../helpers" as *;
+
+.load-resources {
+    display: none;
+    &.active {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        background-color: var(--color-gray-15-opacity);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__loader {
+        animation: rotating 4s infinite ease-in-out;
+        @keyframes rotating {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

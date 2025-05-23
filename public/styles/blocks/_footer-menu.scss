@@ -1,0 +1,29 @@
+@use "../helpers" as *;
+
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: fluid(30,15);
+    column-gap: rem(10);
+    @include tablet{
+    }
+    &-link-main{
+        color: var(--color-white);
+        position: relative;
+        img{
+            position: absolute;
+            left: rem(-28);
+            top: 0;
+        }
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(10);
+        padding-left: rem(20);
+    }
+    @include mobile{
+        display: none;
+    }
+}

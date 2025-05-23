@@ -1,0 +1,129 @@
+@use "../helpers" as *;
+
+.profile-block{
+    border-radius: var(--border-radius);
+    position: relative;
+    padding: rem(100) rem(30) rem(30) rem(200);
+    background-color: var(--color-gray-15);
+    background-image: url(../../images/svgs/bg-line.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include laptop{
+        padding-left: rem(180);
+        padding-right: rem(15);
+    }
+    @include tablet{
+        &::before{
+            display: none;
+        }
+        padding: rem(20) rem(10) rem(0) rem(10);
+    }
+    &::before{
+        content: '';
+        background: url(../../images/svgs/astronaut.svg) no-repeat;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: rem(155);
+        height: rem(206);
+    }
+    &__list{
+        display: flex;
+        column-gap: rem(20);
+        justify-content: space-between;
+    }
+    &__item h3{
+        font-weight: 700;
+        text-align: center;
+        font-family: var(--font-family-accent);
+    }
+    &__item{
+        height: rem(80);
+
+        &__subtitle{
+            font-size: fluid(14,10);
+        }
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        @include tablet{
+            height: rem(150);
+            align-items: center;
+        }
+        &__img{
+            position: absolute;
+            @include tablet{
+                position:relative;
+                left: 0;
+                top: 0;
+            }
+            left: rem(-10);
+            top:rem(-60)
+        }
+    }
+    @include mobile-big {
+        padding: rem(20) rem(10) rem(0) rem(200);
+        
+        &::before{
+            display: block;
+        }
+        &__item h3{
+            font-size: rem(16);
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        } 
+        &__item{
+            align-items: start;
+            height: rem(50);
+            &__img{
+                position: absolute;
+                left: rem(-40);
+                top: rem(-8);
+                width: rem(40);
+            }
+        }
+    }
+    @include mobile{
+        background-position:rem(14);
+
+        padding: rem(10) rem(10) rem(0) rem(40);
+        &::before{
+            display: none;
+        }
+        &__item{
+            &__img{
+                left: rem(-36);
+                top: rem(-6);
+                width: rem(34);
+            }
+        }
+    }
+    @include mobile-s{
+        padding: rem(0) rem(10) rem(10) rem(10);
+        background-image: none;
+        &__item h3{
+            font-size: rem(12);
+        }
+        &__list{
+            align-items: center;
+        }
+        &__item{
+            justify-content: end;
+            align-items: center;
+            &__subtitle{
+                display: none;
+            }
+            height: rem(46);
+            &__img{
+                left: rem(2);
+                top: 0;
+                width: rem(30);
+            }
+        }
+    }
+}

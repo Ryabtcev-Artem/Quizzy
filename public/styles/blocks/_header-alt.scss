@@ -1,0 +1,57 @@
+@use "../helpers" as *;
+
+.header-alt {
+    background-color: var(--color-gray-15);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: rem(10) rem(20);
+    column-gap: rem(20);
+    height: rem(45);
+    @include mobile {
+        padding: rem(10);
+    }
+
+    &__name {
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: fit-content;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__item {
+        display: flex;
+        column-gap: rem(6);
+        @include mobile {
+            font-size: 0;
+            column-gap: rem(0);
+            padding: rem(4);
+            border: var(--border-2);
+        }
+    }
+    &__step-back {
+        color: var(--color-gray-35);
+        &:hover {
+            color: var(--color-gray-35);
+
+        }
+        &.active {
+            color: var(--color-white);
+            &:hover {
+                color: var(--color-accent);
+            }
+        }
+    }
+    &__etap {
+        flex: 0 0 auto;
+    }
+
+    &__menu {
+        margin-left: auto;
+        flex: 0 0 auto;
+        display: flex;
+        gap: rem(15);
+    }
+}

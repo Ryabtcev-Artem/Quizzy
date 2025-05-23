@@ -1,0 +1,120 @@
+@use "../helpers" as *;
+
+.test-pass {
+    display: flex;
+    justify-content: center;
+    padding-bottom: rem(20);
+    @include mobile{
+        padding-block: rem(20);
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: rem(1140);
+        row-gap: rem(16);
+
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    &__item {
+        padding-inline: rem(6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-left: var(--dark-border-1);
+        &:last-child {
+            border-right: var(--dark-border-1);
+        }
+        span{
+            text-align: center;
+        }
+    }
+    &__date{
+        text-align: center;
+    }
+    &__buttons {
+        display: flex;
+        column-gap: rem(12);
+        margin-bottom: rem(10);
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: rem(8);
+            width: 100%;
+            &:hover {
+                span {
+                    transition: var(--transition-duration);
+                    color: var(--color-accent);
+                }
+            }
+        }
+    }
+    &__result{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: var(--color-gray-15);
+        border-radius: var(--border-radius);
+        padding: rem(12);
+        &__title{
+            margin-bottom: rem(10);
+        }
+        &__info{
+            padding-inline: rem(8);
+            padding-block: rem(16);
+            @include mobile-s{
+                padding-inline: rem(0);
+            }
+        }
+        &__image{
+            border-radius: var(--border-radius);
+            max-width: rem(260);
+            max-height: rem(260);
+            float: left;
+            margin-right: rem(10);
+            @include mobile{
+                max-width: rem(210);
+                max-height: rem(210);
+            }
+            @include mobile-s{
+                float: none;
+                max-width: rem(210);
+                max-height: rem(210);
+            }
+        }
+    }
+    &__answers{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(12);
+        @include tablet{
+            grid-template-columns: repeat(2,1fr);
+        }
+        @include mobile-small{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+    &__answer{
+        background-color: var(--color-gray-15);
+        display: flex;
+        flex-direction: column;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        &__question,&__user-answer{
+            padding: rem(12);
+        }
+        &__user-answer{
+            border-top: var(--border-1);
+            margin-top: auto;
+        }
+        &__image{
+            width: 100%;       
+            aspect-ratio: 10/6;  
+            object-fit: cover;   
+            object-position: top;
+        }
+    }
+}

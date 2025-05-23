@@ -1,0 +1,37 @@
+@use "./normalize";
+@use "./globals";
+@use "./utils";
+@use "./variables";
+
+@use "helpers" as *;
+
+@use "./blocks/header";
+@use "./blocks/news";
+@use "./blocks/news-card";
+@use "./blocks/profile-block";
+@use "./blocks/welcome";
+
+@use "./blocks/footer";
+@use "./blocks/footer-about";
+@use "./blocks/footer-menu";
+
+@use "./blocks/slider-item";
+@use "./blocks/tests-slider";
+@use "./blocks/slider-wrapper";
+@use "./blocks/slider-list";
+
+@use "./blocks/card-preview";
+@use "./blocks/top-menu";
+@use "./blocks/pretest-loader";
+@use "./blocks/test-preview";
+
+@use "./blocks/header-alt";
+@use "./blocks/test-window";
+@use "./blocks/question";
+@use "./blocks/modal-dialog";
+@use "./blocks/finish";
+
+@use "./blocks/no-content";
+@use "./blocks/test-pass";
+
+@use "./blocks/load-resources";
