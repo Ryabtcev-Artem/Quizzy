@@ -20,7 +20,7 @@ app.post("/api/deepseek", async (req, res) => {
             },
             {
                 headers: {
-                    Authorization: `Bearer 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`,
+                    Authorization: `Bearer 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`,
                     "Content-Type": "application/json",
                 },
             }
